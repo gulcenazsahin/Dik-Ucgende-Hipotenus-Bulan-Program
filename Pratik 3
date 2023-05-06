@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Pratik3 {
+    public static void main(String[] args) {
+
+        int a, b;
+        double c;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("1. Kenari Giriniz : ");
+        a = input.nextInt();
+        System.out.print("2. Kenari Giriniz : ");
+        b = input.nextInt();
+        c = Math.sqrt((a*a + b*b));
+        System.out.println("Hipotenus : " + c);
+
+
+        double u = ((a + b + c) / 2.0);
+        System.out.println("u : " + u);
+
+        double ucgeninCevresi = (2*u);
+        System.out.println("Ucgenin Cevresi : " + ucgeninCevresi);
+
+        double alanCarpialan = (u * (u-a) * (u-b) * (u-c));
+        System.out.println("Alan x Alan : " + alanCarpialan);
+
+
+}
+ }
